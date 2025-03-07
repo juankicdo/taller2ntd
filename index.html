@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Electrodomésticos</title>
-    <link rel="stylesheet" href="C:\Users\USUARIO\Desktop\juan\5 semestre\Nuevas tecnologias\taller2ntd\css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,12 +13,25 @@
         <p class="descripcion">Encuentra los mejores electrodomésticos al mejor precio y calidad.</p>
     </header>
 
+    // Sección donde se mostrarán los productos 
+    
+    <section class="productos">
+        <div class="producto" onclick="mostrarDetalle('electro1')">Producto 1</div>
+        <div class="producto" onclick="mostrarDetalle('electro2')">Producto 2</div>
+        <div class="producto" onclick="mostrarDetalle('electro3')">Producto 3</div>
+        <div class="producto" onclick="mostrarDetalle('electro3')">Producto 4</div>
+        <div class="producto" onclick="mostrarDetalle('electro3')">Producto 5</div>
+        <div class="producto" onclick="mostrarDetalle('electro3')">Producto 6</div>
+    </section>
 
-    
-    
+    <!-- Cuadro emergente para mostrar detalles del producto -->
+    <div id="detalle" class="detalle oculto">
+        <span class="cerrar" onclick="cerrarDetalle()">×</span>
+        <img id="detalleImagen" src="" alt="Imagen del producto">
+        <p id="detalleDescripcion"></p>
+    </div>
 
 
 
 </body>
 </html>
-
