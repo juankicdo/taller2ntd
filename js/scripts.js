@@ -1,54 +1,24 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+function mostrarDetalle(producto) {
+    let imagen = document.getElementById("detalleImagen");
+    let descripcion = document.getElementById("detalleDescripcion");
 
-window.addEventListener('DOMContentLoaded', event => {
+    // Asignar imagen y descripción según el producto
+    
+    if (producto === "electro1") {
+        imagen.src = "assets/img/electro1.jpg";
+        descripcion.textContent = "Refrigeradora moderna con sistema inverter.";
+    } else if (producto === "electro2") {
+        imagen.src = "assets/img/electro2.jpg";
+        descripcion.textContent = "Lavadora de alta eficiencia con carga frontal.";
+    } else if (producto === "electro3") {
+        imagen.src = "assets/img/electro3.jpg";
+        descripcion.textContent = "Microondas digital con funciones avanzadas.";
+    }
 
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
+    // Mostrar el cuadro de detalle
+    document.getElementById("detalle").classList.remove("oculto");
+}
 
-    };
-
-    // Shrink the navbar 
-    navbarShrink();
-
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
-});
+function cerrarDetalle() {
+    document.getElementById("detalle").classList.add("oculto");
+}
