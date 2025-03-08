@@ -5,31 +5,27 @@ function mostrarDetalle(producto) {
     let descripcion = document.getElementById("detalleDescripcion");
     let detalle = document.getElementById("detalle");
 
-    // Asignar imagen y descripción según el producto
+    // Asignar imagen y descripción con la ruta correcta
     if (producto === "electro1") {
-        imagen.src = "Lavadora.jpg";
+        imagen.src = "assets/img/portafolio/Lavadora.jpg";  
         descripcion.textContent = "Refrigeradora moderna con sistema inverter.";
     } else if (producto === "electro2") {
-        imagen.src = "licuadora.jpg";
+        imagen.src = "assets/img/licuadora.jpg";  
         descripcion.textContent = "Licuadora potente con múltiples velocidades.";
     } else if (producto === "electro3") {
-        imagen.src = "microondas.jpg";
+        imagen.src = "assets/img/microondas.jpg";  
         descripcion.textContent = "Microondas digital con funciones avanzadas.";
     } else if (producto === "electro4") {
-        imagen.src = "Nevera.jpg";
+        imagen.src = "assets/img/Nevera.jpg";
         descripcion.textContent = "Nevera con gran capacidad y sistema de enfriamiento eficiente.";
     } else if (producto === "electro5") {
-        imagen.src = "Plancha.jpg";
+        imagen.src = "assets/img/Plancha.jpg";  
         descripcion.textContent = "Plancha a vapor con tecnología antiadherente.";
     } else if (producto === "electro6") {
-        imagen.src = "Ventilador.jpg";
+        imagen.src = "assets/img/Ventilador.jpg";  
         descripcion.textContent = "Ventilador de torre con control remoto.";
     }
 
-    // Mostrar el cuadro emergente
-    detalle.classList.remove("oculto");
-}
+   
 
-function cerrarDetalle() {
-    document.getElementById("detalle").classList.add("oculto");
 }
