@@ -77,3 +77,70 @@ header {
 .detalle.mostrar {
   display: block;
 }
+
+.descuento {
+  background-color: rgb(23, 228, 228); /* Color llamativo */
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  background: #2c3e50; /* Color de fondo */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Listas del menú */
+.menu ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+/* Alinear el menú de la izquierda */
+.menu-izquierda {
+  display: flex;
+  gap: 20px;
+}
+
+/* Alinear los iconos a la derecha */
+.menu-derecha {
+  display: flex;
+  gap: 15px;
+}
+
+/* Estilos de los enlaces */
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #f39c12; /* Color al pasar el mouse */
+}
+
+/* Estilos de los iconos */
+.icono {
+    width: 24px; /* Tamaño del icono */
+    height: 24px;
+    filter: invert(100%); 
+    cursor: pointer;
+}

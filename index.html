@@ -9,11 +9,27 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo">Bienvenido a Nuestra Tienda</h1>
+        <nav class="menu">
+            <ul class="menu-izquierda">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul class="menu-derecha">
+                <li><a href="#"><img src="assets/img/portfolio/lupa.jpg" alt="Buscar" class="icono"></a></li>
+                <li><a href="#"><img src="assets/img/portfolio/carro.jpg" alt="Carrito" class="icono"></a></li>
+            </ul>
+        </nav>
+
+        <h1 class="titulo">Bienvenido</h1>
         <p class="descripcion">Encuentra los mejores electrodomésticos al mejor precio y calidad.</p>
     </header>
 
     <!-- Sección donde se mostrarán los productos -->
+    <div class="descuento">
+        🔥 ¡Ofertas Especiales! Hasta 50% de descuento en productos seleccionados. 🔥
+    </div>
     <section class="productos">
         <div class="producto" onclick="mostrarDetalle('electro1')">Lavadora</div>
         <div class="producto" onclick="mostrarDetalle('electro2')">Licuadora</div>
