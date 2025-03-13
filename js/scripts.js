@@ -25,7 +25,11 @@ function mostrarDetalle(producto) {
         imagen.src = "assets/img/Ventilador.jpg";  
         descripcion.textContent = "Ventilador de torre con control remoto.";
     }
-
+<script>
+    window.onload = function() {
+        alert('Bienvenido a nuestro sitio web. Explora el contenido actualizado.')
+    }
+</script>
    
 
 }
