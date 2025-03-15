@@ -425,3 +425,29 @@ body {
   background-color: #FAF3E0; /* Color crema */
   color: #333;
 }
+
+#contacto {
+  text-align: center;
+  padding: 50px;
+  background-color: #FAF3E0; /* Color crema */
+  border-radius: 10px;
+}
+
+.equipo {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.miembro {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.miembro:hover {
+  transform: scale(1.05);
+}
