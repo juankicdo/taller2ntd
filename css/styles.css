@@ -351,4 +351,55 @@ body {
   color: #555;
 }
 
+/* Estilo para la sección */
+#nueva-seccion {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para los títulos */
+#nueva-seccion h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#nueva-seccion h3 {
+  color: #34495e;
+  font-size: 1.5em;
+  margin-top: 20px;
+  border-left: 5px solid #2c3e50;
+  padding-left: 10px;
+}
+
+/* Estilo para los párrafos */
+#nueva-seccion p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#nueva-seccion {
+  animation: fadeIn 1s ease-in-out;
+}
 
