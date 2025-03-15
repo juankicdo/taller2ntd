@@ -196,4 +196,126 @@ header {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+.portfolio-item {
+  text-align: center; /* Centrar contenido */
+  margin: 20px auto; /* Centrar el contenedor */
+  width: 50%; /* Ajusta el ancho del contenedor */
+}
+
+.portfolio-item img {
+  max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para mejor apariencia */
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sección de suscripción */
+.suscripcion {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.suscripcion h2 {
+  color: #007BFF;
+}
+
+.suscripcion p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.suscripcion input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.suscripcion button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.suscripcion button:hover {
+  background: #0056b3;
+}
+
+/* Botón del carrito */
+.carrito {
+  margin: 20px;
+  text-align: center;
+}
+
+.carrito button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carrito button:hover {
+  background: #218838;
+}
+
+/* Sección de preguntas frecuentes */
+.faq {
+  background: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+  text-align: center;
+  color: #007BFF;
+}
+
+.pregunta {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 5px solid #007BFF;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.pregunta h3 {
+  color: #333;
+  font-size: 18px;
+}
+
+.pregunta p {
+  font-size: 16px;
+  color: #555;
+}
+
 
