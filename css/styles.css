@@ -421,3 +421,7 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
+body {
+  background-color: #FAF3E0; /* Color crema */
+  color: #333;
+}
